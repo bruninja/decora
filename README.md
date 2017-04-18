@@ -1,7 +1,7 @@
 # Prova Decora
 
 Cadastro de Usuários com Angular2
-Em produção http://bruninja.github.io/
+Em produção http://bruno.url.ph/
 
 ## Executando localmente
 
