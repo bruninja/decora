@@ -1,0 +1,38 @@
+<h5>{{ title }}</h5>
+<div class="row">
+  <form materialize class="col s12" [formGroup]="form" (ngSubmit)="save()">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate"
+               [(ngModel)]="user.name" formControlName="name"
+               [class.invalid]="form.controls['name'].touched && !form.controls['name'].valid"
+        >
+        <label for="name"
+               [class.active]="user.name"
+               data-error="Name is required and needs to contain at least 3 chars">
+          Nome
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" class="validate"
+               [(ngModel)]="user.email" formControlName="email"
+               [class.invalid]="form.controls['email'].touched && !form.controls['email'].valid">
+        <label for="email"
+               [class.active]="user.email"
+               data-error="Invalid Email">
+          Email
+        </label>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit"
+            [disabled]="!form.valid">
+      Salvar<i class="material-icons right">save</i>
+    </button>
+    <a [routerLink]="['/users']" class="btn waves-effect waves-light">
+      Voltar<i class="material-icons left">left</i></a>
+  </form>
+</div>
