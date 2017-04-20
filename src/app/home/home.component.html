@@ -1,20 +1,21 @@
 <div class="row">
-    <form class="col s12">
+    <form materialize class="col s8 offset-s2" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
       <h2> Login </h2>
 
       <div class="row">
         <div class="input-field col s12">
-          <input  id="user" type="text" class="validate">
-          <label for="first_name">Usuário</label>
+          <input name="username" id="user" type="text" class="validate" [(ngModel)]="model.username" #username="ngModel" required />
+          <label for="username">Usuário</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
+          <input id="password" name="password" type="password" class="validate" [(ngModel)]="model.password" #password="ngModel" required />
           <label for="password">Senha</label>
         </div>
       </div>
       <button  class="waves-effect waves-light btn" type="submit" name="button">Entrar</button>
+      <a routerLink="/users/new">Cadastrar</a>
     </form>
   </div>

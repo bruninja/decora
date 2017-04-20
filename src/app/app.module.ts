@@ -18,13 +18,15 @@ import { routing } from './app.routing';
 import { usersRouting } from "./users/users.routing";
 import { UsersModule } from "./users/users.module";
 import { AuthGuard } from './_guards/index';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

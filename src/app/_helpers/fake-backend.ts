@@ -96,6 +96,23 @@ export function mockBackEndFactory(backend: MockBackend, options: BaseRequestOpt
                     return;
                 }
 
+                // update user
+                if (connection.request.method === RequestMethod.Put) {
+                    if (connection.request.headers.get('Authorization') === 'Bearer fake-jwt-token') {
+                      let urlParts = connection.request.url.split('/');
+                      let id = parseInt(urlParts[urlParts.length - 1]);
+                      for (let i = 0; i < users.length; i++) {
+                          let user = users[i];
+                          if (user.id === id) {
+                              //update user
+                              users.splice(i,0);
+                              localStorage.setItem('users', JSON.stringify(users));
+                              break;
+                          }
+                      }
+                    }
+                }
+
                 // delete user
                 if (connection.request.url.match(/\/api\/users\/\d+$/) && connection.request.method === RequestMethod.Delete) {
                     // check for fake auth token in header and return user if valid, this security is implemented server side in a real application

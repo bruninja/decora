@@ -19,14 +19,14 @@ export class UsersComponent implements OnInit {
   }
 
   deleteUser(user){
-    if (confirm("Are you sure you want to delete " + user.name + "?")) {
+    if (confirm("Deseja apagar " + user.name + "?")) {
       var index = this.users.indexOf(user);
       this.users.splice(index, 1);
 
       this.usersService.deleteUser(user.id)
         .subscribe(null,
           err => {
-            alert("Could not delete user.");
+            alert("Não foi possivel apagar o usuário");
             // Revert the view back to its original state
             this.users.splice(index, 0, user);
           });
