@@ -1,0 +1,37 @@
+<div class="center">
+  <img src="../assets/img/decora.png" width="300px" alt="Decora" />
+</div>
+<div class="valign-wrapper row login-box">
+  <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+  <span class="card-title">Login</span>
+  <div class="row card-content">
+      <div class="input-field col s12">
+        <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate">
+        <label class="active" for="usuario">Usuário</label>
+      </div>
+  </div>
+
+  <div class="row card-content">
+      <div class="input-field col s12">
+        <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate">
+        <label class="active" for="senha">Senha</label>
+      </div>
+  </div>
+
+  <div class="card-action right-align">
+    <button class="btn waves-effect waves-light"
+        type="submit" name="action" (click)="fazerLogin()">
+        Login
+        <i class="material-icons right">send</i>
+      </button>
+  </div>
+</div>
+
+</div>
+<p class="center">
+  <b>user: </b>admin
+  <b>senha: </b>123
+  <br />
+  <b>user: </b>user
+  <b>senha: </b>123
+</p>
