@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Login Ng2",
+=======
+  "name": "Teste Decora",
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -12,6 +16,7 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
@@ -33,6 +38,28 @@
   },
   "devDependencies": {
     "@angular/cli": "^1.0.0",
+=======
+    "@angular/animations": "^4.0.0-rc.5",
+    "@angular/common": "^4.0.0-rc.5",
+    "@angular/compiler": "^4.0.0-rc.5",
+    "@angular/compiler-cli": "^4.0.0-rc.5",
+    "@angular/core": "^4.0.0-rc.5",
+    "@angular/forms": "^4.0.0-rc.5",
+    "@angular/http": "^4.0.0-rc.5",
+    "@angular/platform-browser": "^4.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^4.0.0-rc.5",
+    "@angular/platform-server": "^4.0.0-rc.5",
+    "@angular/router": "^4.0.0-rc.5",
+    "angular2-materialize": "^6.7.2",
+    "core-js": "^2.4.1",
+    "jquery": "^3.2.0",
+    "materialize-css": "^0.98.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.0-rc.2",
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
     "@angular/compiler-cli": "^2.4.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
@@ -47,7 +74,11 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
+<<<<<<< HEAD
     "tslint": "~4.4.2",
+=======
+    "tslint": "~4.5.0",
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
     "typescript": "^2.2.1"
   }
 }

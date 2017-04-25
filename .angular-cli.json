@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
+<<<<<<< HEAD
     "name": "rotas"
+=======
+    "name": "angular-crud-rest"
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
   },
   "apps": [
     {

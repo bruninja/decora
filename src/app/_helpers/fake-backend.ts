@@ -26,9 +26,15 @@ export function mockBackEndFactory(backend: MockBackend, options: BaseRequestOpt
                         connection.mockRespond(new Response(new ResponseOptions({
                             status: 200,
                             body: {
+<<<<<<< HEAD
                               id: usuario.id,
                               nome: usuario.nome,
                               email: usuario.email,
+=======
+                              id: user.id,
+                              nome: user.nome,
+                              email: user.email,
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
                               token: 'fake-jwt-token'
                             }
                         })));

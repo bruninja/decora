@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { AuthService } from './login/auth.service';
+=======
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,6 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+<<<<<<< HEAD
 
   mostrarMenu: boolean = false;
 
@@ -20,4 +24,6 @@ export class AppComponent {
       mostrar => this.mostrarMenu = mostrar
     );
   }
+=======
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
 }

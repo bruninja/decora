@@ -1,3 +1,27 @@
+<<<<<<< HEAD
 <div class="center">
   <img src="assets/img/decora.png" alt="Carregando..." />
 </div>
+=======
+<div class="row">
+    <form materialize class="col s8 offset-s2" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+      <h2> Login </h2>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="username" id="user" type="text" class="validate" [(ngModel)]="model.username" #username="ngModel" required />
+          <label for="username">Usuário</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" name="password" type="password" class="validate" [(ngModel)]="model.password" #password="ngModel" required />
+          <label for="password">Senha</label>
+        </div>
+      </div>
+      <button  class="waves-effect waves-light btn" type="submit" name="button">Entrar</button>
+      <a routerLink="/users/new">Cadastrar</a>
+    </form>
+  </div>
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a

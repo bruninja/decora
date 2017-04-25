@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -30,4 +31,20 @@ export class RegisterComponent {
                     this.loading = false;
                 });
     }
+=======
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
+})
+export class RegisterComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
 }

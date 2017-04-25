@@ -5,12 +5,19 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+<<<<<<< HEAD
+=======
+    "target": "es5",
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
     "lib": [
       "es2016",
       "dom"
     ],
     "outDir": "../out-tsc/app",
+<<<<<<< HEAD
     "target": "es5",
+=======
+>>>>>>> 1b991c1b961aa5fb2f00029da2d444c9d91c401a
     "module": "es2015",
     "baseUrl": "",
     "types": []
